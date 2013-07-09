@@ -3,15 +3,22 @@ var morphObject : GameObject;
 var isChaos : float;
 var hasPlayed : boolean;
 var isActive : boolean;
+var isPrefab : boolean;
 
+var startTime : float;
 function Start () {
 	hasPlayed = false;
+	startTime = Time.time;
 }
 
 function Update () {
 	
 	if (isActive) {
-		var curChaos = GameObject.FindGameObjectWithTag("World").GetComponent(WorldStats).getChaos();
+		if (Time.time > (startTime + 1)) {
+			this.renderer.enabled = true;
+			this.collider.enabled = true;
+		}
+	//	var curChaos = GameObject.FindGameObjectWithTag("World").GetComponent(WorldStats).getChaos();
 		/*if (isChaos) {
 			morph();
 		} else {
@@ -25,8 +32,12 @@ function morph() {
 	if (!this.particleSystem.isStopped) {
 		//IF THIS IS CURRENTLY PLAYING DO NOTHING
 	} else if (!morphObject.GetComponent(Morph).isPlayed()) {
-		morphObject.GetComponent(Morph).turnOnAll();
-		turnOffAll();
+		if (!isPrefab) {
+			morphObject.GetComponent(Morph).turnOnAll();
+			turnOffAll();
+		} else {
+			prefabPlay();
+		}
 	}
 }
 
@@ -46,8 +57,8 @@ function curActive() {
 	return isActive;
 }
 
-function changeActive() {
-	isActive = !isActive;
+function changeActive(newActive : boolean) {
+	isActive = newActive;
 }
 
 function checkChaos() {
@@ -55,7 +66,7 @@ function checkChaos() {
 }
 
 function turnOffAll() {
-	changeActive();
+	changeActive(false);
 	replay();
 	this.renderer.enabled = false;
 	this.collider.enabled = false;
@@ -64,7 +75,17 @@ function turnOffAll() {
 function turnOnAll() {
 	this.particleSystem.Play();
 	play();
-	changeActive();
-	this.renderer.enabled = true;
-	this.collider.enabled = true;
+	changeActive(true);
+}
+
+function prefabPlay() {
+	this.renderer.enabled = false;
+	this.collider.enabled = false;
+	var newObj = GameObject.Instantiate(morphObject, this.transform.position, this.transform.rotation);
+	newObj.renderer.enabled = false;
+	newObj.collider.enabled = false;
+	newObj.particleSystem.Play();
+	newObj.GetComponent(Morph).play();
+	newObj.GetComponent(Morph).changeActive(true);
+	Destroy(this.gameObject);
 }

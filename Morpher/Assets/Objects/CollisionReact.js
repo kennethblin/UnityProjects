@@ -15,6 +15,7 @@ function OnCollisionStay (theCollision : Collision){
 	} else if (theCollision.gameObject.GetComponent(SpellStats) != null) {
 		if (this.gameObject.GetComponent(Morph) != null) {
 			if (this.gameObject.GetComponent(Morph).checkChaos() != theCollision.gameObject.GetComponent(SpellStats).checkChaos()) {
+				print("hit");
 				this.gameObject.GetComponent(Morph).morph();
 			}
 		}
