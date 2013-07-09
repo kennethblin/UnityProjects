@@ -1,11 +1,8 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Player\Look.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Morph.js">
     <Files>
-      <File FileName="Assets\Player\Stats.js" Line="6" Column="16" />
-      <File FileName="Assets\Player\Look.js" Line="48" Column="9" />
-      <File FileName="Assets\Objects\CollisionReact.js" Line="14" Column="61" />
-      <File FileName="Assets\Player\Move.js" Line="10" Column="56" />
+      <File FileName="Assets\Objects\Morph.js" Line="10" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
