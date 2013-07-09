@@ -21,7 +21,10 @@ function Update () {
 }
 
 function morph() {
-	if (!morphObject.GetComponent(Morph).isPlayed()) {
+
+	if (!this.particleSystem.isStopped) {
+		//IF THIS IS CURRENTLY PLAYING DO NOTHING
+	} else if (!morphObject.GetComponent(Morph).isPlayed()) {
 		morphObject.GetComponent(Morph).turnOnAll();
 		turnOffAll();
 	}

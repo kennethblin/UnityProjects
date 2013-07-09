@@ -25,8 +25,9 @@ function shootSpell() {
 	newSpell.transform.Translate(quatX * quatY * Vector3(0, 0, 0.5));
 	
 	newSpell.transform.Rotate(Vector3(90 - rotationY, rotationX, 0));
-	//newSpell.transform.rotation *= quatX;
-	//newSpell.transform.rotation *= quatY;
 	
+	var speed : Vector3 = Vector3(0, 0, 10);
+	speed = quatX * quatY * speed;
+	newSpell.rigidbody.velocity = speed;
 	
 }
