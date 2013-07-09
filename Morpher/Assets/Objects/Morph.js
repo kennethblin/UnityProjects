@@ -1,6 +1,6 @@
 #pragma strict
 var morphObject : GameObject;
-var isChaos : boolean;
+var isChaos : float;
 var hasPlayed : boolean;
 var isActive : boolean;
 
@@ -48,6 +48,10 @@ function curActive() {
 
 function changeActive() {
 	isActive = !isActive;
+}
+
+function checkChaos() {
+	return isChaos;
 }
 
 function turnOffAll() {

@@ -57,4 +57,5 @@
         rotationY = GameObject.FindGameObjectWithTag("Player").GetComponent(Stats).getRotY();
         
         Screen.lockCursor = true;
+        Screen.showCursor = false;
     }
