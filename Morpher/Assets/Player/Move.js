@@ -11,14 +11,16 @@ function Update () {
 	if (Input.GetKey("w")) {
 		this.transform.Translate(quat * Vector3(0, 0, speed));
 	}
-	if (Input.GetKey("s")) {
+	else if (Input.GetKey("s")) {
 		this.transform.Translate(quat * Vector3(0, 0, -speed));
 	}
-	if (Input.GetKey("a")) {
+	else if (Input.GetKey("a")) {
 		this.transform.Translate(quat * Vector3(-speed, 0, 0.0));
 	}
-	if (Input.GetKey("d")) {
+	else if (Input.GetKey("d")) {
 		this.transform.Translate(quat * Vector3(speed, 0, 0.0));
+	} else {
+		this.gameObject.rigidbody.velocity = Vector3.zero;
 	}
 	
 }

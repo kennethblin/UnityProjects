@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Objects\Morph.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Spells\SpellShooter.js">
     <Files>
-      <File FileName="Assets\Objects\Morph.js" Line="10" Column="2" />
+      <File FileName="Assets\Spells\SpellShooter.js" Line="27" Column="40" />
+      <File FileName="Assets\Player\Move.js" Line="9" Column="1" />
+      <File FileName="Assets\Player\Look.js" Line="23" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
