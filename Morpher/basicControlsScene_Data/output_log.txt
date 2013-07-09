@@ -15,8 +15,9 @@ Platform assembly: C:\Users\lkenneth\Documents\GitHub\UnityProjects\Morpher\basi
 Loading C:\Users\lkenneth\Documents\GitHub\UnityProjects\Morpher\basicControlsScene_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
 Platform assembly: C:\Users\lkenneth\Documents\GitHub\UnityProjects\Morpher\basicControlsScene_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
 Loading C:\Users\lkenneth\Documents\GitHub\UnityProjects\Morpher\basicControlsScene_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
-- Completed reload, in  0.045 seconds
+- Completed reload, in  0.062 seconds
 desktop: 1600x900 60Hz; virtual: 1600x900 at 0,0
 <RI> Initializing input.
 XInput1_3.dll not found.
 <RI> Input initialized.
+Platform assembly: C:\Users\lkenneth\Documents\GitHub\UnityProjects\Morpher\basicControlsScene_Data\Managed\System.dll (this message is harmless)
