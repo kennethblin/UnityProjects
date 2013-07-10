@@ -1,13 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Player\Move.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\TerrainScrips\TerrainCollider.js">
     <Files>
-      <File FileName="Assets\Player\Move.js" Line="21" Column="55" />
-      <File FileName="Assets\Objects\Trees\TreeCollision.js" Line="22" Column="2" />
-      <File FileName="Assets\Objects\Trees\TreeGeneration.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\Trees\TreeDisappear.js" Line="1" Column="1" />
-      <File FileName="Assets\Spells\SpellCollision.js" Line="1" Column="1" />
-      <File FileName="Assets\Objects\CollisionReact.js" Line="1" Column="1" />
+      <File FileName="Assets\TerrainScrips\TerrainCollider.js" Line="13" Column="82" />
+      <File FileName="Assets\Player\Move.js" Line="8" Column="7" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
