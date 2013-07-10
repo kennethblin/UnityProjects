@@ -6,7 +6,7 @@ var rotX :float;
 var rotY :float;
 
 function Start () {
-	speed = 0.1;
+	speed = 200;
 	sensitivity = 15.0;
 	rotX = 0;
 	rotY = 0;
