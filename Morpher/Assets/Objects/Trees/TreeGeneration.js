@@ -14,16 +14,12 @@ function Update () {
 function generateTrees() {
 	
 	for (var temp = 0; temp < maxNum; temp++) {
-		var randX = genRandom();
-		var randY = genRandom();
-		var newPos = this.transform.position + Vector3(randX, 0, randY);
-		newPos.y = GameObject.FindGameObjectWithTag("TerrainWorld").GetComponent(Terrain).SampleHeight(newPos);
-		GameObject.Instantiate(prefabTree, newPos, this.transform.rotation);
+		generateTree();
 	}
 }
 
 function genRandom() {
-	var randX = Random.Range(100, 500);
+	var randX = Random.Range(0, 120);
 	
 	var randNeg = Random.Range(0, 10);
 	
@@ -32,4 +28,16 @@ function genRandom() {
 	}
 	
 	return randX;
+}
+
+function generateTree() {
+		var newPos = this.transform.position;
+		
+		while (Vector3.Distance(newPos, this.transform.position) < 10) {
+			var randX = genRandom();
+			var randY = genRandom();
+			newPos = this.transform.position + Vector3(randX, 0, randY);
+		}
+		newPos.y = GameObject.FindGameObjectWithTag("TerrainWorld").GetComponent(Terrain).SampleHeight(newPos);
+		GameObject.Instantiate(prefabTree, newPos, this.transform.rotation);
 }

@@ -12,6 +12,7 @@ function Update () {
 function OnCollisionStay (theCollision : Collision){
 	if (theCollision.gameObject.Equals(GameObject.FindGameObjectWithTag("Player"))) {
 		theCollision.gameObject.rigidbody.velocity = Vector3.zero;
+	} else {
+		Destroy(this.gameObject);
 	}
-	Destroy(this.gameObject);
 }
