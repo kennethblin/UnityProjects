@@ -1,10 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Player Scripts\Look.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Player Scripts\PlayerStats.js">
     <Files>
-      <File FileName="Assets\Player Scripts\Look.js" Line="55" Column="1" />
-      <File FileName="Assets\Player Scripts\Movement.js" Line="1" Column="15" />
-      <File FileName="Assets\Player Scripts\PlayerStats.js" Line="1" Column="1" />
+      <File FileName="Assets\Player Scripts\Movement.js" Line="24" Column="46" />
+      <File FileName="Assets\Player Scripts\Look.js" Line="41" Column="25" />
+      <File FileName="Assets\Player Scripts\PlayerStats.js" Line="10" Column="18" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
